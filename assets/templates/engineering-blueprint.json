@@ -1,0 +1,34 @@
+{
+  "id": "engineering-blueprint",
+  "name": "工程蓝图",
+  "aliases": [
+    "蓝图",
+    "工程"
+  ],
+  "category": "工程手册",
+  "description": "角线章节与等宽坐标签、轻蓝信息区及工程表格，以真实细线代替大块边框，适合技术方案与产品文档。",
+  "order": 22,
+  "colors": {
+    "accent": "#4c7196",
+    "strong": "#3b5875",
+    "text": "#424e5b",
+    "heading": "#2c4763",
+    "muted": "#70808e",
+    "surface": "#f3f7fb",
+    "line": "#cddcea",
+    "canvas": "#eaf1f6"
+  },
+  "typography": {
+    "bodyFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "headingFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "size": 16,
+    "lineHeight": 2.02,
+    "spacing": 0.15
+  },
+  "layout": {
+    "number": "decimal",
+    "radius": 0,
+    "heading": "blueprint"
+  },
+  "styles": {}
+}

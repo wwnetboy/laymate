@@ -1,0 +1,34 @@
+{
+  "id": "morning-brief",
+  "name": "清晨简报",
+  "aliases": [
+    "晨报",
+    "每日资讯"
+  ],
+  "category": "资讯简报",
+  "description": "横向晨报底线、紧凑橙色条目号与清楚标题，摘要和数据优先，适合每日资讯、行业动态与高效阅读。",
+  "order": 54,
+  "colors": {
+    "accent": "#bf662b",
+    "strong": "#8a481d",
+    "text": "#4b4d50",
+    "heading": "#303337",
+    "muted": "#7c7f83",
+    "surface": "#fcf6eb",
+    "line": "#eadbc4",
+    "canvas": "#f2ede5"
+  },
+  "typography": {
+    "bodyFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "headingFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "size": 16,
+    "lineHeight": 2,
+    "spacing": 0
+  },
+  "layout": {
+    "number": "decimal",
+    "radius": 0,
+    "heading": "brief"
+  },
+  "styles": {}
+}

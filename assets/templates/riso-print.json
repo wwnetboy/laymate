@@ -1,0 +1,34 @@
+{
+  "id": "riso-print",
+  "name": "孔版印记",
+  "aliases": [
+    "孔版",
+    "双色"
+  ],
+  "category": "复古双色",
+  "description": "砖红大序号与墨绿刊线、局部错位纸签，把双色印刷重心留给标题与导语，适合创意、独立文化和活动。",
+  "order": 27,
+  "colors": {
+    "accent": "#b8563b",
+    "strong": "#9b4b37",
+    "text": "#504b43",
+    "heading": "#375b55",
+    "muted": "#7b756a",
+    "surface": "#fbf3e6",
+    "line": "#dfd4c1",
+    "canvas": "#f3ead8"
+  },
+  "typography": {
+    "bodyFont": "'Songti SC','Noto Serif SC','Source Han Serif SC',SimSun,serif",
+    "headingFont": "'Songti SC','Noto Serif SC','Source Han Serif SC',SimSun,serif",
+    "size": 17,
+    "lineHeight": 2.05,
+    "spacing": 0.25
+  },
+  "layout": {
+    "number": "decimal",
+    "radius": 0,
+    "heading": "riso"
+  },
+  "styles": {}
+}

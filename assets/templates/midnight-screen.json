@@ -1,0 +1,34 @@
+{
+  "id": "midnight-screen",
+  "name": "午夜荧屏",
+  "aliases": [
+    "午夜",
+    "暗色"
+  ],
+  "category": "暗色阅读",
+  "description": "墨绿夜读正文、薄荷大序号与细线信息区，暗色卡片只突出关键补充，适合科技、产品和夜间长文阅读。",
+  "order": 28,
+  "colors": {
+    "accent": "#93c6b2",
+    "strong": "#adcfbe",
+    "text": "#d6e0db",
+    "heading": "#edf3ef",
+    "muted": "#9aaca3",
+    "surface": "#21322d",
+    "line": "#41534b",
+    "canvas": "#e8edf3"
+  },
+  "typography": {
+    "bodyFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "headingFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "size": 16.5,
+    "lineHeight": 2.05,
+    "spacing": 0.15
+  },
+  "layout": {
+    "number": "decimal",
+    "radius": 14,
+    "heading": "midnight"
+  },
+  "styles": {}
+}

@@ -1,0 +1,10 @@
+# 本地生成产物与开发工具；提交保留 Skill 源码及项目说明。
+/examples/
+/dist/
+/output/
+/site/
+/dev/
+
+node_modules/
+.DS_Store
+Thumbs.db

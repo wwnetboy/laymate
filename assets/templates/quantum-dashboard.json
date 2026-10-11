@@ -1,0 +1,35 @@
+{
+  "id": "quantum-dashboard",
+  "name": "量子仪表",
+  "aliases": [
+    "仪表盘",
+    "量子",
+    "数据面板"
+  ],
+  "category": "科技仪表盘",
+  "description": "开放数码章节与短进度线、轻量分区卡和蓝色读数，以精简产品界面呈现内容，适合 AI 工具与数据解读。",
+  "order": 29,
+  "colors": {
+    "accent": "#517bcb",
+    "strong": "#3d5d9b",
+    "text": "#414b5b",
+    "heading": "#2b3e5d",
+    "muted": "#74839a",
+    "surface": "#f2f5fc",
+    "line": "#d5deee",
+    "canvas": "#eaf0f8"
+  },
+  "typography": {
+    "bodyFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "headingFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "size": 16,
+    "lineHeight": 2.02,
+    "spacing": 0.1
+  },
+  "layout": {
+    "number": "decimal",
+    "radius": 16,
+    "heading": "dashboard"
+  },
+  "styles": {}
+}

@@ -1,0 +1,34 @@
+{
+  "id": "radio-wave",
+  "name": "声波电台",
+  "aliases": [
+    "电台",
+    "声波"
+  ],
+  "category": "声音叙事",
+  "description": "右侧频段圆签和底部双线，宽松旁白引用、棕色节目标签和轻量问答，适合播客笔记、音乐与人物故事。",
+  "order": 45,
+  "colors": {
+    "accent": "#a15834",
+    "strong": "#7f4127",
+    "text": "#504840",
+    "heading": "#42362c",
+    "muted": "#8b7969",
+    "surface": "#faf3e9",
+    "line": "#e5d8c5",
+    "canvas": "#f0e7db"
+  },
+  "typography": {
+    "bodyFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "headingFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "size": 17,
+    "lineHeight": 2.06,
+    "spacing": 0.15
+  },
+  "layout": {
+    "number": "decimal",
+    "radius": 0,
+    "heading": "radio"
+  },
+  "styles": {}
+}

@@ -1,0 +1,34 @@
+{
+  "id": "cream-letter",
+  "name": "奶油来信",
+  "aliases": [
+    "来信",
+    "书信"
+  ],
+  "category": "书信手札",
+  "description": "轻楷标题、居中信签与宋体正文，奶油色回顾和细虚线旁注保留书信温度，适合个人随笔与情感长文。",
+  "order": 20,
+  "colors": {
+    "accent": "#b0936e",
+    "strong": "#776047",
+    "text": "#544d45",
+    "heading": "#60513f",
+    "muted": "#7e7467",
+    "surface": "#f8f4ed",
+    "line": "#e4dacc",
+    "canvas": "#f2eee6"
+  },
+  "typography": {
+    "bodyFont": "'Songti SC','Noto Serif SC','Source Han Serif SC',SimSun,serif",
+    "headingFont": "KaiTi,STKaiti,'Kaiti SC','Songti SC',serif",
+    "size": 17,
+    "lineHeight": 2.08,
+    "spacing": 0.3
+  },
+  "layout": {
+    "number": "roman",
+    "radius": 0,
+    "heading": "letter"
+  },
+  "styles": {}
+}

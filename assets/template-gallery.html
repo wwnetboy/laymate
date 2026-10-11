@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>laymate-skill 公众号排版助手 · {{COUNT}} 款风格模板持续更新中</title>
+<style>
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scrollbar-gutter:stable}
+:root{--bg:#F7F7F5;--panel:#F3F2EF;--card:#FCFCFB;--line:#E7E7E4;--line-strong:#D6D5D0;--ink:#111111;--ink-soft:#6B6B6B}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif}
+body.preview-open{overflow:hidden}
+.gallery{width:100%;max-width:1680px;margin:0 auto;padding:28px 32px 32px;--card-height:calc(100dvh - 164px)}
+.gallery-header{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 28px;padding-bottom:20px;margin-bottom:24px;border-bottom:1px solid var(--line)}
+.gallery-heading{flex:1 1 100%;min-width:0}
+.eyebrow{font-size:11px;font-weight:600;letter-spacing:.18em;color:var(--ink-soft)}
+h1{margin:7px 0;font-size:30px;line-height:1.3;letter-spacing:-.02em;font-weight:600;color:var(--ink)}
+.style-count{display:inline-flex;align-items:center;gap:7px;margin-left:12px;padding:5px 12px;border:1px solid var(--line);border-radius:999px;background:var(--panel);color:var(--ink);font-size:12px;font-weight:600;letter-spacing:normal;line-height:1.4;vertical-align:4px;white-space:nowrap}
+.style-count-dot{width:6px;height:6px;border-radius:50%;background:#10B981;animation:count-pulse 2.2s infinite}
+@keyframes count-pulse{0%{box-shadow:0 0 0 0 rgba(16,185,129,.4)}70%{box-shadow:0 0 0 7px rgba(16,185,129,0)}100%{box-shadow:0 0 0 0 rgba(16,185,129,0)}}
+.intro{margin:0;font-size:13px;line-height:1.7;color:var(--ink-soft)}
+.filter-bar{display:flex;flex:1 1 100%;min-width:0;gap:14px;align-items:center;flex-wrap:wrap}
+.filter-controls{display:grid;grid-template-columns:110px 120px 130px;gap:8px}
+.filter-control{position:relative;display:block;min-width:0}
+.filter-toggle{display:flex;width:100%;height:44px;align-items:center;justify-content:space-between;gap:8px;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);font:inherit;font-size:13px;cursor:pointer;color-scheme:light;transition:border-color .15s,background-color .15s,color .15s}
+.filter-toggle:hover{border-color:var(--line-strong);background:var(--panel)}
+.filter-toggle-value{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.filter-toggle-chevron{flex:0 0 auto;width:10px;height:10px;fill:none;stroke:var(--ink-soft);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;transition:transform .18s}
+.filter-toggle[aria-expanded="true"]{border-color:var(--ink)}
+.filter-toggle[aria-expanded="true"] .filter-toggle-chevron{transform:rotate(180deg)}
+.filter-control.is-active .filter-toggle{border-color:var(--ink);font-weight:600}
+.filter-menu{position:absolute;top:calc(100% + 6px);left:0;z-index:40;min-width:100%;max-height:288px;margin:0;padding:6px;list-style:none;overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--card);box-shadow:0 12px 32px rgba(17,17,17,.08),0 2px 8px rgba(17,17,17,.04);animation:menu-in .16s ease}
+.filter-menu:focus{outline:none}
+.filter-menu::-webkit-scrollbar{width:8px}
+.filter-menu::-webkit-scrollbar-thumb{border-radius:4px;background:var(--line-strong)}
+@keyframes menu-in{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+.filter-option{position:relative;display:flex;align-items:center;padding:9px 32px 9px 12px;border-radius:9px;font-size:13px;line-height:1.4;color:var(--ink);white-space:nowrap;cursor:pointer}
+.filter-option:hover,.filter-option.is-focus{background:var(--panel)}
+.filter-option[aria-selected="true"]{background:#E9E8E4;color:var(--ink);font-weight:600}
+.filter-option[aria-selected="true"]::after{content:"✓";position:absolute;right:12px;font-size:12px}
+.github-link{display:inline-flex;flex-shrink:0;align-items:center;gap:8px;height:44px;padding:0 16px;margin-left:auto;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);font:inherit;font-size:13px;font-weight:600;line-height:1;text-decoration:none;cursor:pointer;transition:background-color .15s,border-color .15s}
+.github-link svg{display:block;fill:currentColor;transition:fill .15s}
+.github-star{display:inline-flex;align-items:center;gap:4px;margin-left:-2px;padding:5px 10px;border-radius:999px;background:var(--panel);color:var(--ink);font-size:11px;font-weight:700;line-height:1}
+.github-star svg{fill:#E8A23A}
+.github-link:hover{background:var(--panel);border-color:var(--line-strong)}
+.search-group{display:flex;flex:0 1 auto;gap:14px;align-items:center;min-width:0}
+.search-group input{flex:0 1 320px;min-width:0}
+.result-summary{display:flex;flex-direction:column;gap:4px;min-width:88px}
+.reset-filters{align-self:flex-start;padding:0;border:0;background:none;color:var(--ink);font:inherit;font-size:11px;line-height:1.6;cursor:pointer;text-decoration:underline}
+.reset-filters:hover{color:#000}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+input{width:320px;max-width:100%;border:1px solid var(--line);border-radius:12px;padding:12px 15px;background:var(--panel);color:var(--ink);font:inherit;font-size:13px}
+input::placeholder{color:#9C9B95}
+input:focus-visible,button:focus-visible,a:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.result-count{white-space:nowrap;font-size:12px;color:var(--ink-soft)}
+.theme-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.theme-card{display:flex;flex-direction:column;min-width:0;height:var(--card-height);background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:border-color .15s,box-shadow .15s}
+.theme-card:hover{border-color:var(--line-strong);box-shadow:0 16px 40px rgba(17,17,17,.06)}
+.card-info{flex-shrink:0;padding:16px 20px;border-bottom:1px solid #EFEDEA}
+.card-title{display:flex;flex-wrap:wrap;gap:7px;align-items:center}
+.card-title h2{min-width:0}
+.color-dot{width:8px;height:8px;flex:0 0 8px;border-radius:50%}
+h2{margin:0;font-size:17px;line-height:1.5;letter-spacing:-.01em;font-weight:600;color:var(--ink)}
+.theme-no{display:inline-flex;flex:0 0 auto;align-items:center;padding:2px 8px;border-radius:999px;background:var(--panel);color:var(--ink-soft);font-size:11px;line-height:1.5;font-weight:600;letter-spacing:.06em;font-variant-numeric:tabular-nums;white-space:nowrap}
+.category{display:inline-block;margin-right:8px;padding:2px 8px;border-radius:999px;background:var(--panel);color:var(--ink-soft);font-size:11px;line-height:1.5;white-space:nowrap}
+.card-info p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;min-height:40px;margin:8px 0 0;font-size:12px;line-height:1.7;color:var(--ink-soft)}
+.open-article,.copy-prompt{display:inline-flex;flex-shrink:0;gap:6px;align-items:center;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-size:12px;line-height:1.5;font-weight:600;white-space:nowrap;cursor:pointer;transition:background-color .15s,border-color .15s}
+.open-article{margin-left:auto}
+.open-article:hover,.copy-prompt:hover{background:var(--panel);border-color:var(--line-strong)}
+.copy-toast{position:fixed;left:50%;top:24px;z-index:100;transform:translate(-50%,-16px);display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;background:var(--ink);color:var(--card);font-size:13px;font-weight:600;box-shadow:0 16px 40px rgba(17,17,17,.25);opacity:0;pointer-events:none;transition:opacity .2s,transform .2s}
+.copy-toast.is-visible{opacity:1;transform:translate(-50%,0)}
+iframe{display:block;width:100%;border:0;background:white}
+.card-preview{flex:1;min-height:0;height:0}
+.empty{padding:40px 0;color:var(--ink-soft);font-size:14px}
+.component-dialog{width:min(920px,calc(100vw - 64px));height:calc(100dvh - 64px);max-width:none;max-height:none;margin:auto;padding:0;overflow:hidden;border:1px solid var(--line);border-radius:24px;background:var(--panel);color:var(--ink);box-shadow:0 24px 100px rgba(17,17,17,.28)}
+.component-dialog[open]{display:flex;flex-direction:column}
+.component-dialog::backdrop{background:rgba(17,17,17,.45);backdrop-filter:blur(4px)}
+.dialog-header{display:flex;flex-shrink:0;align-items:center;justify-content:space-between;gap:16px;padding:15px 20px;background:var(--card);border-bottom:1px solid var(--line)}
+.dialog-header h2{font-size:16px}
+.dialog-header p{margin:4px 0 0;font-size:11px;color:var(--ink-soft)}
+.dialog-close{display:grid;place-items:center;flex-shrink:0;width:34px;height:34px;padding:0;border:0;border-radius:10px;background:var(--panel);color:var(--ink);font-size:24px;line-height:1;cursor:pointer}
+.dialog-close:hover{background:#E9E8E4}
+.dialog-body{position:relative;flex:1;min-height:0}
+.component-preview{height:100%}
+.dialog-loading{position:absolute;inset:0;display:grid;place-items:center;margin:0;background:var(--panel);color:var(--ink-soft);font-size:13px}
+@media(max-width:1399px){.filter-controls{grid-template-columns:102px 112px 122px}.search-group input{width:250px}}
+@media(max-width:1199px){.theme-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:800px){.filter-bar{gap:10px}.filter-controls{width:100%;grid-template-columns:repeat(3,minmax(0,1fr))}.search-group{flex:1 1 100%}.search-group input{flex:1 1 auto;max-width:none}}
+@media(max-width:680px){.theme-grid{grid-template-columns:1fr}}
+@media(max-width:640px){.gallery{padding:18px 12px 20px}.gallery-header{padding-bottom:16px;margin-bottom:18px;gap:12px}h1{font-size:24px}.style-count{margin-left:8px;padding:4px 10px;font-size:11px;vertical-align:3px}.intro{font-size:12px}.filter-controls{gap:6px}.filter-toggle{padding:10px 9px;font-size:12px}.search-group{gap:10px}.result-summary{min-width:78px}.theme-grid{gap:18px}.card-info{padding:14px 16px}.component-dialog{width:calc(100vw - 16px);height:calc(100dvh - 24px);border-radius:16px}.dialog-header{padding:12px 14px}.dialog-header h2{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.style-count-dot,.filter-toggle-chevron,.filter-menu{animation:none;transition:none}.copy-toast{transition:none}}
+@media print{.filter-bar,.open-article,.copy-prompt,.copy-toast,.component-dialog{display:none!important}.theme-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.theme-card{height:500px;break-inside:avoid}}
+</style>
+</head>
+<body>
+<main class="gallery">
+  <header class="gallery-header">
+    <div class="gallery-heading"><div class="eyebrow">公众号排版助手</div><h1>laymate-skill · 风格模板全览<span class="style-count"><span class="style-count-dot" aria-hidden="true"></span>{{COUNT}} 款风格 · 持续更新中</span></h1><p class="intro">laymate-skill 是一个开源的公众号排版助手技能：把想写的主题告诉 AI，挑一款喜欢的风格，即可生成排好版、可一键复制进公众号编辑器的文章。</p></div>
+    <div class="filter-bar" role="search" aria-label="筛选风格模板"><div class="filter-controls">{{FILTERS}}</div><div class="search-group"><input id="theme-search" type="search" aria-label="搜索模板" placeholder="搜索名称、风格或适用内容"><div class="result-summary" hidden><span class="result-count" id="result-count" role="status" aria-live="polite">{{COUNT}} 款模板</span><button id="reset-filters" class="reset-filters" type="button" hidden>清除筛选</button></div></div><a class="github-link" href="https://github.com/wwnetboy/laymate-skill" title="喜欢这个项目？欢迎到 GitHub 点个 Star，支持我们持续更新"><svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg><span>GitHub</span><span class="github-star"><svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>点个 Star</span></a></div>
+  </header>
+  <div class="theme-grid">{{CARDS}}</div>
+  <p class="empty" id="empty-result" hidden>没有符合条件的模板，试试减少筛选条件或更换关键词。</p>
+</main>
+<div class="copy-toast" id="copy-toast" role="status" aria-live="polite"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 12.5 5 5 10-11"/></svg>已复制提示词</div>
+<dialog id="component-dialog" class="component-dialog" aria-labelledby="component-title" aria-describedby="component-hint">
+  <header class="dialog-header"><div><h2 id="component-title">完整组件预览</h2><p id="component-hint">在预览内滚动查看全部组件</p></div><button id="component-close" class="dialog-close" type="button" aria-label="关闭完整组件预览" autofocus><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></header>
+  <div class="dialog-body"><iframe id="component-preview" class="component-preview" title="完整组件预览" sandbox="allow-scripts allow-same-origin"></iframe><p id="component-loading" class="dialog-loading" role="status" hidden>正在载入完整组件…</p></div>
+</dialog>
+<script id="component-source" type="application/json">{{COMPONENT_SOURCE}}</script>
+<script>{{RUNTIME}}</script>
+</body>
+</html>

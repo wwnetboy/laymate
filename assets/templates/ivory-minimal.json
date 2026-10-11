@@ -1,0 +1,37 @@
+{
+  "id": "ivory-minimal",
+  "name": "月白留笺",
+  "aliases": [
+    "极简",
+    "月白",
+    "白色",
+    "minimal"
+  ],
+  "category": "极简编辑",
+  "description": "短线小序签、独立大标题与开放正文，资料和表格以细线轻分区，适合知识文章与安静长文阅读。",
+  "order": 14,
+  "colors": {
+    "accent": "#829487",
+    "strong": "#3c5544",
+    "text": "#454c47",
+    "heading": "#29382e",
+    "muted": "#6e786f",
+    "surface": "#f4f6f3",
+    "line": "#dce3dc",
+    "canvas": "#f6f7f6"
+  },
+  "typography": {
+    "bodyFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "headingFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "size": 16.5,
+    "lineHeight": 2.05,
+    "spacing": 0.1
+  },
+  "layout": {
+    "number": "quiet",
+    "rule": "top",
+    "radius": 0,
+    "heading": "minimal"
+  },
+  "styles": {}
+}

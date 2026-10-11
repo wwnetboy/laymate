@@ -1,0 +1,34 @@
+{
+  "id": "terracotta-living",
+  "name": "陶土生活",
+  "aliases": [
+    "陶土",
+    "居家"
+  ],
+  "category": "居家美学",
+  "description": "陶土实色小号牌与暖色标题，导语留出双层底线，引用和摘要呈现陶器般宽阔弧角，适合居家、手作与慢生活。",
+  "order": 43,
+  "colors": {
+    "accent": "#ad6647",
+    "strong": "#814831",
+    "text": "#564b42",
+    "heading": "#4e382d",
+    "muted": "#8b7b70",
+    "surface": "#faf3ed",
+    "line": "#e8d9cc",
+    "canvas": "#f0e7df"
+  },
+  "typography": {
+    "bodyFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "headingFont": "'Songti SC','Noto Serif SC','Source Han Serif SC',SimSun,serif",
+    "size": 17,
+    "lineHeight": 2.1,
+    "spacing": 0.1
+  },
+  "layout": {
+    "number": "decimal",
+    "radius": 0,
+    "heading": "terracotta"
+  },
+  "styles": {}
+}

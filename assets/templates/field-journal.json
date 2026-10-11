@@ -1,0 +1,34 @@
+{
+  "id": "field-journal",
+  "name": "山野行记",
+  "aliases": [
+    "山野",
+    "户外"
+  ],
+  "category": "自然行旅",
+  "description": "居中山野章节、下方小圆签和自然绿细线，宋体正文与浅色资料保持呼吸，适合自然、户外与慢生活。",
+  "order": 24,
+  "colors": {
+    "accent": "#66815f",
+    "strong": "#526947",
+    "text": "#4b5246",
+    "heading": "#435c3c",
+    "muted": "#76836c",
+    "surface": "#f3f6ee",
+    "line": "#dbe2d1",
+    "canvas": "#eaf0e5"
+  },
+  "typography": {
+    "bodyFont": "'Songti SC','Noto Serif SC','Source Han Serif SC',SimSun,serif",
+    "headingFont": "'Songti SC','Noto Serif SC','Source Han Serif SC',SimSun,serif",
+    "size": 17,
+    "lineHeight": 2.08,
+    "spacing": 0.25
+  },
+  "layout": {
+    "number": "decimal",
+    "radius": 18,
+    "heading": "outdoor"
+  },
+  "styles": {}
+}

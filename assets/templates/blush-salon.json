@@ -1,0 +1,34 @@
+{
+  "id": "blush-salon",
+  "name": "桃粉沙龙",
+  "aliases": [
+    "桃粉",
+    "沙龙"
+  ],
+  "category": "女性生活",
+  "description": "居中细线序签、桃粉衬线标题与圆弧引语，标签像小型请柬，适合审美分享、人物对谈与生活品牌。",
+  "order": 42,
+  "colors": {
+    "accent": "#a96679",
+    "strong": "#804253",
+    "text": "#57474e",
+    "heading": "#513440",
+    "muted": "#8c747e",
+    "surface": "#fcf3f5",
+    "line": "#ecd9df",
+    "canvas": "#f4e9ee"
+  },
+  "typography": {
+    "bodyFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "headingFont": "'Songti SC','Noto Serif SC','Source Han Serif SC',SimSun,serif",
+    "size": 17,
+    "lineHeight": 2.05,
+    "spacing": 0.15
+  },
+  "layout": {
+    "number": "roman",
+    "radius": 0,
+    "heading": "salon"
+  },
+  "styles": {}
+}

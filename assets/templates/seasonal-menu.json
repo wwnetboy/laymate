@@ -1,0 +1,34 @@
+{
+  "id": "seasonal-menu",
+  "name": "四季菜单",
+  "aliases": [
+    "菜单",
+    "食谱"
+  ],
+  "category": "美食生活",
+  "description": "居中细双线菜单标题、罗马菜序与清淡纸色，资料采用食材清单和横向读数，适合食谱、美食文化与生活清单。",
+  "order": 52,
+  "colors": {
+    "accent": "#7e7042",
+    "strong": "#5c522d",
+    "text": "#4d4a3e",
+    "heading": "#403c2a",
+    "muted": "#817e69",
+    "surface": "#f8f7ee",
+    "line": "#e0ddc7",
+    "canvas": "#efede0"
+  },
+  "typography": {
+    "bodyFont": "'Songti SC','Noto Serif SC','Source Han Serif SC',SimSun,serif",
+    "headingFont": "'Songti SC','Noto Serif SC','Source Han Serif SC',SimSun,serif",
+    "size": 17,
+    "lineHeight": 2.12,
+    "spacing": 0.2
+  },
+  "layout": {
+    "number": "roman",
+    "radius": 0,
+    "heading": "menu"
+  },
+  "styles": {}
+}

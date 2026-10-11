@@ -1,0 +1,34 @@
+{
+  "id": "amber-column",
+  "name": "琥珀专栏",
+  "aliases": [
+    "琥珀",
+    "专栏"
+  ],
+  "category": "人物专栏",
+  "description": "右侧罗马栏号、琥珀细竖线和衬线标题，引用采用专栏式双线，适合人物访谈、行业观点与深度随笔。",
+  "order": 37,
+  "colors": {
+    "accent": "#a36b24",
+    "strong": "#79511e",
+    "text": "#51493f",
+    "heading": "#45392a",
+    "muted": "#827565",
+    "surface": "#faf5eb",
+    "line": "#e5d7bf",
+    "canvas": "#f0e9dc"
+  },
+  "typography": {
+    "bodyFont": "'Songti SC','Noto Serif SC','Source Han Serif SC',SimSun,serif",
+    "headingFont": "'Songti SC','Noto Serif SC','Source Han Serif SC',SimSun,serif",
+    "size": 17,
+    "lineHeight": 2.08,
+    "spacing": 0.2
+  },
+  "layout": {
+    "number": "roman",
+    "radius": 0,
+    "heading": "amber"
+  },
+  "styles": {}
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "公众号排版助手"
+  short_description: "根据主题或参考链接写公众号文章，套用五十九款模板，支持切换样式与一键复制。"
+  default_prompt: "使用 $laymate，根据我提供的主题或参考资料写一篇公众号文章，套用指定模板；未指定时推荐合适模板，或先生成可切换模板的 HTML。"

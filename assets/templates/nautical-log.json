@@ -1,0 +1,34 @@
+{
+  "id": "nautical-log",
+  "name": "航海日志",
+  "aliases": [
+    "航海",
+    "航线"
+  ],
+  "category": "探索行记",
+  "description": "左侧舷窗编号、双层航线和细字章节，资料使用虚线航程栏，适合探索、地理知识与远行记录。",
+  "order": 58,
+  "colors": {
+    "accent": "#37667b",
+    "strong": "#254e61",
+    "text": "#455059",
+    "heading": "#273e4c",
+    "muted": "#74838c",
+    "surface": "#f2f7f9",
+    "line": "#d4e1e7",
+    "canvas": "#e7eef2"
+  },
+  "typography": {
+    "bodyFont": "'Songti SC','Noto Serif SC','Source Han Serif SC',SimSun,serif",
+    "headingFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "size": 17,
+    "lineHeight": 2.09,
+    "spacing": 0.15
+  },
+  "layout": {
+    "number": "decimal",
+    "radius": 0,
+    "heading": "nautical"
+  },
+  "styles": {}
+}

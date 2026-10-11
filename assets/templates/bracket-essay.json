@@ -1,0 +1,34 @@
+{
+  "id": "bracket-essay",
+  "name": "极简括号",
+  "aliases": [
+    "括号",
+    "现代随笔"
+  ],
+  "category": "现代随笔",
+  "description": "方括号小序号与下方独立标题，所有资料回到细边与留白，摘句只有短基线，适合个人观点、现代散文与安静阅读。",
+  "order": 56,
+  "colors": {
+    "accent": "#737c75",
+    "strong": "#47584c",
+    "text": "#484e49",
+    "heading": "#2f3d33",
+    "muted": "#7b857e",
+    "surface": "#f4f6f3",
+    "line": "#dce2db",
+    "canvas": "#ebefea"
+  },
+  "typography": {
+    "bodyFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "headingFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "size": 17,
+    "lineHeight": 2.14,
+    "spacing": 0.05
+  },
+  "layout": {
+    "number": "bracket",
+    "radius": 0,
+    "heading": "brackets"
+  },
+  "styles": {}
+}

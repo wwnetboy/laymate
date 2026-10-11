@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{TITLE}} · 公众号排版助手</title>
+<style>
+* { box-sizing:border-box; }
+:root { --studio-accent:#111111; --studio-panel:#F3F2EF; --studio-card:#FCFCFB; --studio-line:#E7E7E4; --studio-line-strong:#D6D5D0; --studio-ink:#111111; --studio-ink-soft:#6B6B6B; }
+body { margin:0; padding:36px; background:#F7F7F5; color:var(--studio-ink); font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif; }
+[hidden] { display:none !important; }
+.control-panel { position:fixed; top:50%; right:24px; z-index:60; transform:translateY(-50%); width:244px; max-height:calc(100dvh - 48px); overflow:auto; padding:20px; border:1px solid var(--studio-line); border-radius:24px; background:rgba(252,252,251,.94); box-shadow:0 16px 48px rgba(17,17,17,.09),0 2px 8px rgba(17,17,17,.04); backdrop-filter:blur(16px); scrollbar-width:thin; }
+.panel-heading { display:flex; align-items:center; gap:11px; margin-bottom:23px; }
+.panel-mark { display:grid; place-items:center; flex:0 0 36px; height:36px; border:1px solid var(--studio-line); border-radius:12px; background:var(--studio-panel); color:var(--studio-accent); }
+.panel-mark svg { width:20px; height:20px; }
+.panel-heading strong { display:block; font-size:14px; font-weight:650; letter-spacing:.15px; color:var(--studio-ink); }
+.panel-heading small { display:block; margin-top:4px; font-size:11px; color:var(--studio-ink-soft); }
+.panel-fields { display:grid; gap:16px; }
+.control-field { display:grid; gap:8px; font-size:12px; color:var(--studio-ink-soft); }
+.actions { display:grid; gap:9px; margin-top:22px; }
+button,select { border:1px solid var(--studio-line); border-radius:12px; padding:11px 13px; font-size:13px; line-height:1.4; font-family:inherit; }
+button { cursor:pointer; font-weight:600; transition:background .15s,border-color .15s; }
+button:disabled,select:disabled { cursor:wait; opacity:.65; }
+button:focus-visible,select:focus-visible,a:focus-visible,summary:focus-visible { outline:2px solid var(--studio-ink); outline-offset:2px; }
+.primary { background:var(--studio-accent); border-color:var(--studio-accent); color:#FCFCFB; min-height:44px; }
+.primary:hover { filter:brightness(1.22); }
+.secondary,select { background:var(--studio-card); color:var(--studio-ink); }
+.secondary:hover { background:var(--studio-panel); }
+.control-field select { width:100%; min-height:44px; padding-right:33px; appearance:none; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='m4.5 6 3.5 3.5L11.5 6' stroke='%236B6B6B' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 12px center; }
+.selector-trigger { display:flex; align-items:center; gap:9px; width:100%; min-height:44px; text-align:left; background:var(--studio-card); color:var(--studio-ink); font-weight:500; }
+.selector-trigger:hover { background:var(--studio-panel); border-color:var(--studio-line-strong); }
+.selector-trigger[aria-expanded="true"] { border-color:var(--studio-accent); box-shadow:0 0 0 3px color-mix(in srgb,var(--studio-accent) 8%,transparent); }
+.selector-value { flex:1; }
+.selector-swatch { flex:0 0 9px; height:9px; border-radius:50%; box-shadow:0 0 0 3px color-mix(in srgb,currentColor 10%,transparent); background:currentColor; }
+.selector-arrow { flex:0 0 16px; width:16px; height:16px; color:var(--studio-ink-soft); transition:transform .15s; }
+.selector-trigger[aria-expanded="true"] .selector-arrow { transform:rotate(180deg); }
+.selector-menu { position:fixed; inset:auto; margin:0; padding:6px; overflow:auto; overscroll-behavior:contain; border:1px solid var(--studio-line); border-radius:16px; background:var(--studio-card); color:var(--studio-ink); box-shadow:0 16px 40px rgba(17,17,17,.12),0 3px 10px rgba(17,17,17,.05); font-family:inherit; scrollbar-width:thin; }
+.selector-option { display:flex; align-items:center; gap:10px; min-height:40px; padding:10px 11px; border-radius:9px; cursor:pointer; }
+.selector-option.is-active { background:var(--studio-panel); }
+.selector-option[aria-selected="true"] { background:color-mix(in srgb,var(--studio-accent) 8%,white); }
+.selector-option[aria-selected="true"].is-active { background:color-mix(in srgb,var(--studio-accent) 13%,white); }
+.selector-option-text { display:grid; flex:1; gap:3px; font-size:13px; line-height:1.4; }
+.selector-option-text small { font-size:10px; color:#8F8E89; }
+.selector-check { flex:0 0 16px; width:16px; height:16px; color:var(--studio-accent); visibility:hidden; }
+.selector-option[aria-selected="true"] .selector-check { visibility:visible; }
+.panel-note { margin-top:18px; padding:12px 13px; border:1px solid var(--studio-line); border-radius:14px; background:var(--studio-panel); font-size:11px; color:var(--studio-ink-soft); line-height:1.8; overflow-wrap:anywhere; }
+#theme-description { margin:0; color:#55534E; font-size:11px; line-height:1.8; }
+#copy-status { margin:9px 0 0; padding-top:9px; border-top:1px solid var(--studio-line); font-size:11px; line-height:1.8; }
+#copy-status[data-kind="success"] { color:#077A4C; }
+#copy-status[data-kind="error"] { color:#BA1A1A; }
+.panel-toggle,.panel-close { display:none; }
+.panel-backdrop { position:fixed; inset:0; z-index:50; background:rgba(17,17,17,.28); backdrop-filter:blur(3px); }
+.paper { max-width:780px; margin:0 auto; padding:44px 52px 52px; background:var(--studio-card); border:1px solid var(--studio-line); }
+.preview-heading { margin:0 0 30px; font-size:26px; line-height:1.55; letter-spacing:-.02em; font-weight:700; color:var(--studio-ink); }
+.templates { margin:18px 0 0; padding-top:16px; border-top:1px solid var(--studio-line); font-size:11px; color:var(--studio-ink-soft); }
+.assets { max-width:780px; margin:18px auto; padding:17px 20px; border:1px solid var(--studio-line); background:var(--studio-card); border-radius:14px; font-size:13px; color:#55534E; }
+.templates summary,.assets summary { cursor:pointer; font-weight:600; }
+.template-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; margin-top:13px; }
+.template-card { display:block; width:100%; text-align:left; padding:12px 9px; border:1px solid var(--studio-line); border-radius:12px; background:var(--studio-card); color:var(--studio-ink); }
+.template-card:hover { background:var(--studio-panel); }
+.template-card[aria-pressed="true"] { outline:2px solid var(--studio-accent); outline-offset:-2px; }
+.template-card strong { display:block; margin:8px 0 4px; font-size:11px; white-space:nowrap; }
+.template-card small { color:var(--studio-ink-soft); font-size:10px; font-weight:400; }
+.swatch { display:block; height:3px; width:24px; border-radius:9px; }
+.assets { margin-bottom:60px; }
+.assets p { line-height:1.9; }
+.asset-links { display:flex; flex-wrap:wrap; gap:10px; margin-top:14px; }
+.asset-links a { border:1px solid var(--studio-line); padding:8px 12px; border-radius:999px; color:var(--studio-ink); text-decoration:none; }
+.asset-links a:hover { background:var(--studio-panel); }
+@media(max-width:1280px) {
+  body { padding:20px 12px; }
+  body.panel-open { overflow:hidden; }
+  .control-panel { display:none; right:12px; width:min(292px,calc(100vw - 24px)); max-height:calc(100dvh - 32px); }
+  .control-panel.is-open { display:block; }
+  .panel-heading { gap:10px; }
+  .panel-close { display:grid; place-items:center; width:28px; height:28px; margin-left:auto; padding:0; border:0; border-radius:9px; background:var(--studio-panel); color:var(--studio-ink); font-size:18px; font-weight:400; }
+  .panel-close:hover { background:#E9E8E4; }
+  .panel-toggle { position:fixed; right:0; top:50%; transform:translateY(-50%); z-index:40; display:grid; place-items:center; gap:6px; width:28px; padding:13px 0; border:1px solid var(--studio-line); border-right:0; border-radius:12px 0 0 12px; background:rgba(252,252,251,.97); color:var(--studio-ink); box-shadow:0 8px 24px rgba(17,17,17,.08); font-size:10px; }
+  .panel-toggle svg { width:18px; height:18px; color:var(--studio-accent); }
+  .paper { padding:36px 32px; }
+}
+@media(max-width:640px) {
+  .paper { padding:28px var(--studio-paper-inset,18px) 36px; border-left:0; border-right:0; }
+  .preview-heading { font-size:23px; }
+  .assets { padding:14px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  button,.selector-arrow { transition:none; }
+}
+@media print {
+  body { padding:0; background:#fff; }
+  .control-panel,.panel-toggle,.panel-backdrop,.selector-menu,.assets { display:none !important; }
+  .paper { border:0; max-width:none; padding:0; }
+}
+</style>
+</head>
+<body data-initial-theme="{{INITIAL_THEME}}" data-initial-image-style="{{INITIAL_IMAGE_STYLE}}">
+<button id="panel-toggle" class="panel-toggle" type="button" aria-label="打开排版操作面板" aria-controls="control-panel" aria-expanded="false">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 17h16"/><rect x="7" y="4" width="4" height="6" rx="1.5" fill="white"/><rect x="14" y="14" width="4" height="6" rx="1.5" fill="white"/></svg>
+  <span>排版</span>
+</button>
+<div id="panel-backdrop" class="panel-backdrop" hidden></div>
+<aside id="control-panel" class="control-panel" aria-label="排版操作">
+  <div class="panel-heading">
+    <span class="panel-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="3"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></span>
+    <div><strong>公众号排版助手</strong><small>样式与复制</small></div>
+    <button id="panel-close" class="panel-close" type="button" aria-label="关闭排版操作面板"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </div>
+  <div class="panel-fields">
+    <div class="control-field"><span id="template-select-label">文章样式</span><select id="template-select" aria-labelledby="template-select-label">{{TEMPLATE_OPTIONS}}</select></div>
+    <div class="control-field"><span id="image-style-select-label">配图外观</span><select id="image-style-select" aria-labelledby="image-style-select-label">{{IMAGE_OPTIONS}}</select></div>
+  </div>
+  <div class="actions">
+    <button id="copy-article" class="primary" type="button">一键复制正文</button>
+    <button id="copy-title" class="secondary" type="button">复制标题</button>
+  </div>
+  <div class="panel-note">
+    <p id="theme-description"></p>
+    <p id="copy-status" role="status" aria-live="polite">选择样式后复制正文，再到公众号粘贴并预览。</p>
+  </div>
+  <details class="templates"><summary>浏览全部样式</summary><div class="template-grid">{{THEME_CARDS}}</div></details>
+</aside>
+<div id="preview-area">
+<main class="paper" style="{{PAPER_STYLE}}">
+  <h1 id="article-title" class="preview-heading">{{TITLE}}</h1>
+  <section id="article-content" data-studio="article">{{ARTICLE}}</section>
+</main>
+{{ASSETS}}
+</div>
+<script id="studio-themes" type="application/json">{{THEMES_JSON}}</script>
+{{MEDIA_SCRIPT}}
+<script>{{THEME_ENGINE}}
+{{RUNTIME}}</script>
+</body>
+</html>
+

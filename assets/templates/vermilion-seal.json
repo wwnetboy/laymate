@@ -1,0 +1,34 @@
+{
+  "id": "vermilion-seal",
+  "name": "朱印雅集",
+  "aliases": [
+    "朱印",
+    "印章"
+  ],
+  "category": "印章雅集",
+  "description": "留白印章序号、楷书章节和朱红印签，暖纸资料只在重点处出现，适合文化、茶事和传统美学。",
+  "order": 21,
+  "colors": {
+    "accent": "#b04739",
+    "strong": "#93372e",
+    "text": "#514842",
+    "heading": "#533a2f",
+    "muted": "#807368",
+    "surface": "#fbf4ed",
+    "line": "#e4d2c4",
+    "canvas": "#f2e9dd"
+  },
+  "typography": {
+    "bodyFont": "'Songti SC','Noto Serif SC','Source Han Serif SC',SimSun,serif",
+    "headingFont": "KaiTi,STKaiti,'Kaiti SC','Songti SC',serif",
+    "size": 17,
+    "lineHeight": 2.08,
+    "spacing": 0.25
+  },
+  "layout": {
+    "number": "han",
+    "radius": 0,
+    "heading": "seal"
+  },
+  "styles": {}
+}

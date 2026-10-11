@@ -1,0 +1,36 @@
+{
+  "id": "apricot-bulletin",
+  "name": "杏橙暖报",
+  "aliases": [
+    "橙色暖纸",
+    "热搜词解析",
+    "杏橙"
+  ],
+  "category": "暖色资讯",
+  "description": "奶油纸底、橙色颗粒柔边标题与黄油色圆角白卡，适合趋势盘点、热点解读和创作指南。",
+  "order": 4,
+  "colors": {
+    "accent": "#ef9b65",
+    "strong": "#a96235",
+    "text": "#292724",
+    "heading": "#292724",
+    "muted": "#8b7d6f",
+    "surface": "#fff3df",
+    "line": "#ffe3a1",
+    "canvas": "#fff8ed"
+  },
+  "typography": {
+    "bodyFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "headingFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "size": 16,
+    "lineHeight": 2.05,
+    "spacing": 0.45
+  },
+  "layout": {
+    "number": "decimal",
+    "rule": "none",
+    "radius": 12,
+    "heading": "apricot"
+  },
+  "styles": {}
+}

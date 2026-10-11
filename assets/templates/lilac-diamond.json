@@ -1,0 +1,36 @@
+{
+  "id": "lilac-diamond",
+  "name": "紫序菱线",
+  "aliases": [
+    "淡紫大序号",
+    "菱形标题",
+    "复盘长文"
+  ],
+  "category": "观点长文",
+  "description": "向下渐隐的淡紫大编号与黑色标题叠映，字符菱形紧邻标题，两侧浅紫细线对称居中，适合工作复盘与方法文章。",
+  "order": 3,
+  "colors": {
+    "accent": "#514ae8",
+    "strong": "#514ae8",
+    "text": "#292b30",
+    "heading": "#212228",
+    "muted": "#9691af",
+    "surface": "#f5f4fc",
+    "line": "#e1def3",
+    "canvas": "#f8f7fc"
+  },
+  "typography": {
+    "bodyFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "headingFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "size": 16,
+    "lineHeight": 2.12,
+    "spacing": 0.6
+  },
+  "layout": {
+    "number": "decimal",
+    "rule": "none",
+    "radius": 12,
+    "heading": "lilacdiamond"
+  },
+  "styles": {}
+}

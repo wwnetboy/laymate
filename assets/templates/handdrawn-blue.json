@@ -1,0 +1,36 @@
+{
+  "id": "handdrawn-blue",
+  "name": "手绘蓝笺",
+  "aliases": [
+    "蓝色双线框",
+    "亲情守护",
+    "手绘蓝"
+  ],
+  "category": "亲和服务",
+  "description": "蓝色空心斜序号、书本电脑装饰、居中标题和双线资料框，适合公共服务、活动说明与家庭指南。",
+  "order": 6,
+  "colors": {
+    "accent": "#5682a3",
+    "strong": "#426b8a",
+    "text": "#4d5052",
+    "heading": "#426b8a",
+    "muted": "#8d9dab",
+    "surface": "#f0f7fb",
+    "line": "#c4d7e5",
+    "canvas": "#f5f9fc"
+  },
+  "typography": {
+    "bodyFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "headingFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "size": 16,
+    "lineHeight": 2.06,
+    "spacing": 0.5
+  },
+  "layout": {
+    "number": "decimal",
+    "rule": "none",
+    "radius": 12,
+    "heading": "handdrawn"
+  },
+  "styles": {}
+}

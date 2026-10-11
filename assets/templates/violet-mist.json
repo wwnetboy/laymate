@@ -1,0 +1,37 @@
+{
+  "id": "violet-mist",
+  "name": "雾紫札记",
+  "aliases": [
+    "紫色",
+    "雾紫",
+    "紫版",
+    "purple"
+  ],
+  "category": "柔和札记",
+  "description": "斜体大序号、侧线章节与衬线标题，单侧圆角导语和轻量札记让阅读舒展，适合生活与创作者随笔。",
+  "order": 13,
+  "colors": {
+    "accent": "#92759c",
+    "strong": "#76547f",
+    "text": "#514b54",
+    "heading": "#55425d",
+    "muted": "#7c6d81",
+    "surface": "#f5f0f6",
+    "line": "#dfd4e3",
+    "canvas": "#f1edf5"
+  },
+  "typography": {
+    "bodyFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "headingFont": "'Songti SC','Noto Serif SC','Source Han Serif SC',SimSun,serif",
+    "size": 16,
+    "lineHeight": 2.05,
+    "spacing": 0.2
+  },
+  "layout": {
+    "number": "pill",
+    "rule": "none",
+    "radius": 14,
+    "heading": "ribbon"
+  },
+  "styles": {}
+}

@@ -1,0 +1,34 @@
+{
+  "id": "geometric-collage",
+  "name": "几何拼贴",
+  "aliases": [
+    "拼贴",
+    "几何"
+  ],
+  "category": "创意设计",
+  "description": "双色几何号牌与不对称章节线，局部卡片使用斜角与短边拼接，正文保持整齐，适合设计方法、创意项目与品牌故事。",
+  "order": 57,
+  "colors": {
+    "accent": "#555daa",
+    "strong": "#374285",
+    "text": "#454b58",
+    "heading": "#2c3550",
+    "muted": "#778198",
+    "surface": "#f4f5fc",
+    "line": "#d9ddef",
+    "canvas": "#e9ecf8"
+  },
+  "typography": {
+    "bodyFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "headingFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "size": 16,
+    "lineHeight": 2.05,
+    "spacing": 0.1
+  },
+  "layout": {
+    "number": "decimal",
+    "radius": 0,
+    "heading": "collage"
+  },
+  "styles": {}
+}

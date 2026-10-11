@@ -1,0 +1,34 @@
+{
+  "id": "annotated-classics",
+  "name": "古籍批注",
+  "aliases": [
+    "批注",
+    "古籍"
+  ],
+  "category": "古典解读",
+  "description": "右侧卷签、楷书标题与书眉双线，旁注用暖纸左边界、引文用开放页边留白，适合古籍解读、历史与文化随笔。",
+  "order": 55,
+  "colors": {
+    "accent": "#795a47",
+    "strong": "#624331",
+    "text": "#50463d",
+    "heading": "#46372c",
+    "muted": "#84786a",
+    "surface": "#faf6ef",
+    "line": "#e5dac8",
+    "canvas": "#f0e9dd"
+  },
+  "typography": {
+    "bodyFont": "'Songti SC','Noto Serif SC','Source Han Serif SC',SimSun,serif",
+    "headingFont": "KaiTi,STKaiti,'Kaiti SC','Songti SC',serif",
+    "size": 17,
+    "lineHeight": 2.18,
+    "spacing": 0.25
+  },
+  "layout": {
+    "number": "chinese",
+    "radius": 0,
+    "heading": "annotation"
+  },
+  "styles": {}
+}

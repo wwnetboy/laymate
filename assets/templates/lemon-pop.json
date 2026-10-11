@@ -1,0 +1,34 @@
+{
+  "id": "lemon-pop",
+  "name": "柠檬气泡",
+  "aliases": [
+    "柠檬",
+    "波普"
+  ],
+  "category": "波普趣味",
+  "description": "黑色圆章、柠檬色章节与轻快粗线，保留活泼重心并减少重复描边，适合轻知识和活泼科普。",
+  "order": 23,
+  "colors": {
+    "accent": "#e5c644",
+    "strong": "#4c4332",
+    "text": "#49463a",
+    "heading": "#302e23",
+    "muted": "#797565",
+    "surface": "#fff7ce",
+    "line": "#e1dcc2",
+    "canvas": "#f5f1df"
+  },
+  "typography": {
+    "bodyFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "headingFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "size": 16.5,
+    "lineHeight": 2,
+    "spacing": 0.1
+  },
+  "layout": {
+    "number": "decimal",
+    "radius": 12,
+    "heading": "pop"
+  },
+  "styles": {}
+}

@@ -1,0 +1,34 @@
+{
+  "id": "swiss-grid",
+  "name": "网格宣言",
+  "aliases": [
+    "网格",
+    "瑞士"
+  ],
+  "category": "瑞士平面",
+  "description": "大幅红色侧栏序号与粗黑分隔，硬朗标题搭配开放信息区，以少量高对比建立秩序，适合设计和鲜明观点。",
+  "order": 15,
+  "colors": {
+    "accent": "#d43f32",
+    "strong": "#b5372c",
+    "text": "#3d4040",
+    "heading": "#222525",
+    "muted": "#707574",
+    "surface": "#fff5f1",
+    "line": "#deddd8",
+    "canvas": "#f0f0ee"
+  },
+  "typography": {
+    "bodyFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "headingFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "size": 16,
+    "lineHeight": 2,
+    "spacing": 0.05
+  },
+  "layout": {
+    "number": "decimal",
+    "radius": 0,
+    "heading": "swiss"
+  },
+  "styles": {}
+}

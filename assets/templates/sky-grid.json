@@ -1,0 +1,36 @@
+{
+  "id": "sky-grid",
+  "name": "晴蓝方格",
+  "aliases": [
+    "浅蓝网格",
+    "方格教程",
+    "蓝色工具"
+  ],
+  "category": "工具手记",
+  "description": "淡灰连续方格、疏朗衬线正文、代码窗口图标与天蓝底线，标题后半段叠浅蓝色带，适合软件分享和轻量教程。",
+  "order": 7,
+  "colors": {
+    "accent": "#38b6f4",
+    "strong": "#38b6f4",
+    "text": "#3e3e3e",
+    "heading": "#38b6f4",
+    "muted": "#929da6",
+    "surface": "#eaf6ff",
+    "line": "#cce8f7",
+    "canvas": "#f8fcff"
+  },
+  "typography": {
+    "bodyFont": "'Times New Roman','Songti SC','Noto Serif SC','Source Han Serif SC',SimSun,serif",
+    "headingFont": "'Times New Roman','Songti SC','Noto Serif SC','Source Han Serif SC',SimSun,serif",
+    "size": 16,
+    "lineHeight": 1.9,
+    "spacing": 1.6
+  },
+  "layout": {
+    "number": "decimal",
+    "rule": "none",
+    "radius": 12,
+    "heading": "skygrid"
+  },
+  "styles": {}
+}

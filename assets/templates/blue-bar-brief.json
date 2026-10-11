@@ -1,0 +1,36 @@
+{
+  "id": "blue-bar-brief",
+  "name": "蓝标简报",
+  "aliases": [
+    "蓝色竖标",
+    "科学简报",
+    "蓝条新闻"
+  ],
+  "category": "新闻科普",
+  "description": "白底黑字、蓝色竖标粗标题、亮蓝强调与点状下划线，组件统一蓝色线条和浅蓝底，适合资讯、科学与机构动态。",
+  "order": 8,
+  "colors": {
+    "accent": "#3278f6",
+    "strong": "#3278f6",
+    "text": "#383b3f",
+    "heading": "#222426",
+    "muted": "#8b929a",
+    "surface": "#f3f7ff",
+    "line": "#e1e7f0",
+    "canvas": "#f6f8fb"
+  },
+  "typography": {
+    "bodyFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "headingFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "size": 16,
+    "lineHeight": 2.04,
+    "spacing": 0.4
+  },
+  "layout": {
+    "number": "decimal",
+    "rule": "none",
+    "radius": 12,
+    "heading": "bluebar"
+  },
+  "styles": {}
+}

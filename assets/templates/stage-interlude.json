@@ -1,0 +1,34 @@
+{
+  "id": "stage-interlude",
+  "name": "舞台幕间",
+  "aliases": [
+    "幕间",
+    "舞台"
+  ],
+  "category": "戏剧演出",
+  "description": "暗酒红舞台、居中幕次和细金边摘句，正文留白充足，适合戏剧、演出回顾与艺术叙事。",
+  "order": 46,
+  "colors": {
+    "accent": "#d99d94",
+    "strong": "#efc5b7",
+    "text": "#e0d4d1",
+    "heading": "#f5e8de",
+    "muted": "#b5a39e",
+    "surface": "#302326",
+    "line": "#594047",
+    "canvas": "#21191c"
+  },
+  "typography": {
+    "bodyFont": "'Songti SC','Noto Serif SC','Source Han Serif SC',SimSun,serif",
+    "headingFont": "'Songti SC','Noto Serif SC','Source Han Serif SC',SimSun,serif",
+    "size": 17,
+    "lineHeight": 2.1,
+    "spacing": 0.2
+  },
+  "layout": {
+    "number": "roman",
+    "radius": 0,
+    "heading": "stage"
+  },
+  "styles": {}
+}

@@ -1,0 +1,34 @@
+{
+  "id": "poetry-space",
+  "name": "诗行留白",
+  "aliases": [
+    "诗歌",
+    "诗行"
+  ],
+  "category": "诗歌散文",
+  "description": "章节标题在前、细小中文序号在后，引用留出宽阔空白，楷书仅用于标题与摘句，适合诗歌、散文与短篇阅读。",
+  "order": 39,
+  "colors": {
+    "accent": "#8f777d",
+    "strong": "#6a505a",
+    "text": "#514951",
+    "heading": "#463b46",
+    "muted": "#857c82",
+    "surface": "#faf7f8",
+    "line": "#e5dce1",
+    "canvas": "#f1edef"
+  },
+  "typography": {
+    "bodyFont": "'Songti SC','Noto Serif SC','Source Han Serif SC',SimSun,serif",
+    "headingFont": "KaiTi,STKaiti,'Kaiti SC','Songti SC',serif",
+    "size": 17,
+    "lineHeight": 2.22,
+    "spacing": 0.4
+  },
+  "layout": {
+    "number": "han",
+    "radius": 0,
+    "heading": "poetry"
+  },
+  "styles": {}
+}

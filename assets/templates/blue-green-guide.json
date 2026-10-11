@@ -1,0 +1,36 @@
+{
+  "id": "blue-green-guide",
+  "name": "蓝绿步骤",
+  "aliases": [
+    "蓝绿教程",
+    "STEP",
+    "步骤胶囊"
+  ],
+  "category": "服务指南",
+  "description": "蓝色 STEP 胶囊搭配绿色描边、居中蓝标题和浅蓝渐变卡片，适合服务说明与分步教程。",
+  "order": 5,
+  "colors": {
+    "accent": "#0571d8",
+    "strong": "#0065bd",
+    "text": "#60666c",
+    "heading": "#1f3448",
+    "muted": "#8a959f",
+    "surface": "#eff7ff",
+    "line": "#cfe3f4",
+    "canvas": "#f4f8fc"
+  },
+  "typography": {
+    "bodyFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "headingFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "size": 16,
+    "lineHeight": 2,
+    "spacing": 0.4
+  },
+  "layout": {
+    "number": "plain",
+    "rule": "none",
+    "radius": 12,
+    "heading": "service"
+  },
+  "styles": {}
+}

@@ -1,0 +1,35 @@
+{
+  "id": "lab-notebook",
+  "name": "实验手册",
+  "aliases": [
+    "实验",
+    "手册",
+    "实验室"
+  ],
+  "category": "科技实验记录",
+  "description": "青灰数码章节与实验记录分栏，细线标注、开放摘要和三线表格便于复查，适合模型测评和科学方法。",
+  "order": 33,
+  "colors": {
+    "accent": "#5c8173",
+    "strong": "#436253",
+    "text": "#454f48",
+    "heading": "#354e41",
+    "muted": "#778477",
+    "surface": "#f4f6f1",
+    "line": "#d8e0d4",
+    "canvas": "#eef3ef"
+  },
+  "typography": {
+    "bodyFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "headingFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "size": 16.5,
+    "lineHeight": 2.05,
+    "spacing": 0.1
+  },
+  "layout": {
+    "number": "decimal",
+    "radius": 6,
+    "heading": "lab"
+  },
+  "styles": {}
+}

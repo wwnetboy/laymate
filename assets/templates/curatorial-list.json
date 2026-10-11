@@ -1,0 +1,34 @@
+{
+  "id": "curatorial-list",
+  "name": "策展清单",
+  "aliases": [
+    "策展",
+    "清单"
+  ],
+  "category": "作品清单",
+  "description": "右侧窄列展项编号、标题下短紫线和开放列表，作品卡只使用左侧细边，适合推荐清单、书影介绍与策展文章。",
+  "order": 53,
+  "colors": {
+    "accent": "#7866a6",
+    "strong": "#574582",
+    "text": "#4b4855",
+    "heading": "#373043",
+    "muted": "#827a91",
+    "surface": "#f6f3fa",
+    "line": "#ddd5e8",
+    "canvas": "#ede8f4"
+  },
+  "typography": {
+    "bodyFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "headingFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "size": 16,
+    "lineHeight": 2.04,
+    "spacing": 0.1
+  },
+  "layout": {
+    "number": "decimal",
+    "radius": 0,
+    "heading": "curatorial"
+  },
+  "styles": {}
+}

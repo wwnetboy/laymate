@@ -1,0 +1,35 @@
+{
+  "id": "orbital-station",
+  "name": "轨道空间",
+  "aliases": [
+    "太空",
+    "空间站",
+    "轨道"
+  ],
+  "category": "太空控制舱",
+  "description": "深蓝任务舱、橙色轨道圆章与横向章节，细线任务签和开放引用保留航行感，适合航天、硬件和前沿探索。",
+  "order": 30,
+  "colors": {
+    "accent": "#e5b279",
+    "strong": "#f3ca99",
+    "text": "#d6e0ec",
+    "heading": "#f0f4f9",
+    "muted": "#9daec4",
+    "surface": "#1a2c43",
+    "line": "#41546e",
+    "canvas": "#e9edf4"
+  },
+  "typography": {
+    "bodyFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "headingFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "size": 16.5,
+    "lineHeight": 2.05,
+    "spacing": 0.15
+  },
+  "layout": {
+    "number": "decimal",
+    "radius": 20,
+    "heading": "orbital"
+  },
+  "styles": {}
+}

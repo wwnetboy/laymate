@@ -1,0 +1,35 @@
+{
+  "id": "titanium-protocol",
+  "name": "钛银协议",
+  "aliases": [
+    "钛银",
+    "协议",
+    "金属"
+  ],
+  "category": "工业科技",
+  "description": "银灰协议签、克制的黑色标题与横向面板，硬边资料和细线表格突出工业秩序，适合技术标准与硬件产品。",
+  "order": 34,
+  "colors": {
+    "accent": "#657286",
+    "strong": "#43516b",
+    "text": "#474e59",
+    "heading": "#2c384a",
+    "muted": "#77818f",
+    "surface": "#f2f4f7",
+    "line": "#d6dce4",
+    "canvas": "#e9edf1"
+  },
+  "typography": {
+    "bodyFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "headingFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "size": 16.5,
+    "lineHeight": 2.03,
+    "spacing": 0.1
+  },
+  "layout": {
+    "number": "chapter",
+    "radius": 0,
+    "heading": "titanium"
+  },
+  "styles": {}
+}

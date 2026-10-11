@@ -1,0 +1,34 @@
+{
+  "id": "navy-research",
+  "name": "深蓝研究",
+  "aliases": [
+    "研究",
+    "报告"
+  ],
+  "category": "研究报告",
+  "description": "大幅衬线章节编号、报告分栏与深蓝细线，数据和横向表格突出证据，适合研究、测评和行业分析。",
+  "order": 18,
+  "colors": {
+    "accent": "#3f607f",
+    "strong": "#344d68",
+    "text": "#424c57",
+    "heading": "#243b53",
+    "muted": "#6d7c89",
+    "surface": "#f3f5f8",
+    "line": "#d5dde6",
+    "canvas": "#eef1f6"
+  },
+  "typography": {
+    "bodyFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "headingFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "size": 16.5,
+    "lineHeight": 2.03,
+    "spacing": 0.1
+  },
+  "layout": {
+    "number": "decimal",
+    "radius": 0,
+    "heading": "research"
+  },
+  "styles": {}
+}

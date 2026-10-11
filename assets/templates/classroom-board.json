@@ -1,0 +1,34 @@
+{
+  "id": "classroom-board",
+  "name": "课程板书",
+  "aliases": [
+    "板书",
+    "黑板"
+  ],
+  "category": "课程教学",
+  "description": "深绿黑板正文、楷书粉笔章节与手册双线，米黄小签和方框步骤便于记忆，适合课程讲解与知识复习。",
+  "order": 51,
+  "colors": {
+    "accent": "#e6d89f",
+    "strong": "#f2e4ac",
+    "text": "#dae7de",
+    "heading": "#f0f4dd",
+    "muted": "#adbdaf",
+    "surface": "#273f35",
+    "line": "#526b59",
+    "canvas": "#1d332a"
+  },
+  "typography": {
+    "bodyFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "headingFont": "KaiTi,STKaiti,'Kaiti SC','Songti SC',serif",
+    "size": 17,
+    "lineHeight": 2.08,
+    "spacing": 0.1
+  },
+  "layout": {
+    "number": "han",
+    "radius": 0,
+    "heading": "chalk"
+  },
+  "styles": {}
+}

@@ -1,0 +1,34 @@
+{
+  "id": "gallery-white",
+  "name": "画廊白墙",
+  "aliases": [
+    "画廊",
+    "展签"
+  ],
+  "category": "艺术展签",
+  "description": "右侧大幅展品编号、轻衬线标题与细小展签，开放引用和留白让文字成为主体，适合艺术、摄影与作品介绍。",
+  "order": 25,
+  "colors": {
+    "accent": "#9a8171",
+    "strong": "#5d4b41",
+    "text": "#4d4745",
+    "heading": "#403631",
+    "muted": "#7d736e",
+    "surface": "#f6f4f0",
+    "line": "#ded8d2",
+    "canvas": "#efedef"
+  },
+  "typography": {
+    "bodyFont": "'Songti SC','Noto Serif SC','Source Han Serif SC',SimSun,serif",
+    "headingFont": "'Songti SC','Noto Serif SC','Source Han Serif SC',SimSun,serif",
+    "size": 17,
+    "lineHeight": 2.08,
+    "spacing": 0.25
+  },
+  "layout": {
+    "number": "decimal",
+    "radius": 0,
+    "heading": "gallery"
+  },
+  "styles": {}
+}

@@ -1,0 +1,37 @@
+{
+  "id": "cinnabar-folio",
+  "name": "朱砂书卷",
+  "aliases": [
+    "朱砂",
+    "红色",
+    "暖红",
+    "red"
+  ],
+  "category": "人文书卷",
+  "description": "居中卷签、朱砂短线与楷书标题，宋体正文和暖纸摘要形成书页节奏，适合阅读与人文随笔。",
+  "order": 12,
+  "colors": {
+    "accent": "#b55744",
+    "strong": "#934234",
+    "text": "#514a43",
+    "heading": "#514136",
+    "muted": "#807467",
+    "surface": "#f8f5ee",
+    "line": "#dfd5c8",
+    "canvas": "#f3eadf"
+  },
+  "typography": {
+    "bodyFont": "'Songti SC','Noto Serif SC','Source Han Serif SC',SimSun,serif",
+    "headingFont": "KaiTi,STKaiti,'Kaiti SC','Songti SC',serif",
+    "size": 17,
+    "lineHeight": 2.08,
+    "spacing": 0.3
+  },
+  "layout": {
+    "number": "chinese",
+    "rule": "top",
+    "radius": 2,
+    "heading": "folio"
+  },
+  "styles": {}
+}

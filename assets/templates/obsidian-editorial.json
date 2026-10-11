@@ -1,0 +1,37 @@
+{
+  "id": "obsidian-editorial",
+  "name": "墨曜刊",
+  "aliases": [
+    "黑金",
+    "墨曜",
+    "黑色",
+    "black"
+  ],
+  "category": "典藏刊物",
+  "description": "大幅罗马卷序、细金章节线与黑色刊签，用杂志式留白承载衬线正文，适合深度观点和人物文章。",
+  "order": 10,
+  "colors": {
+    "accent": "#99794c",
+    "strong": "#695022",
+    "text": "#44423e",
+    "heading": "#222320",
+    "muted": "#807a6e",
+    "surface": "#f6f3ec",
+    "line": "#ddd6c8",
+    "canvas": "#eeeae3"
+  },
+  "typography": {
+    "bodyFont": "'Songti SC','Noto Serif SC','Source Han Serif SC',SimSun,serif",
+    "headingFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "size": 16.5,
+    "lineHeight": 2.08,
+    "spacing": 0.25
+  },
+  "layout": {
+    "number": "roman",
+    "rule": "bottom",
+    "radius": 0,
+    "heading": "editorial"
+  },
+  "styles": {}
+}

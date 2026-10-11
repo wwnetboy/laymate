@@ -1,0 +1,37 @@
+{
+  "id": "emerald-prologue",
+  "name": "翡翠序章",
+  "aliases": [
+    "绿色",
+    "绿版",
+    "翡翠",
+    "green"
+  ],
+  "category": "清新杂志",
+  "description": "鲜绿重点、大号章节编号和宋体留白，沿用当前绿色模板。",
+  "order": 1,
+  "colors": {
+    "accent": "#0cc566",
+    "strong": "#0bad59",
+    "text": "#3d4650",
+    "heading": "#163b27",
+    "muted": "#89978e",
+    "surface": "#f6f8f7",
+    "line": "#dfe9e2",
+    "canvas": "#f3f5f3"
+  },
+  "typography": {
+    "bodyFont": "'Songti SC','Noto Serif SC','Source Han Serif SC',SimSun,serif",
+    "headingFont": "'Songti SC','Noto Serif SC','Source Han Serif SC',SimSun,serif",
+    "size": 16,
+    "lineHeight": 2.05,
+    "spacing": 0.5
+  },
+  "layout": {
+    "number": "monument",
+    "rule": "top",
+    "radius": 6,
+    "heading": "monument"
+  },
+  "styles": {}
+}

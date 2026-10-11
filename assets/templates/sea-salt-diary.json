@@ -1,0 +1,34 @@
+{
+  "id": "sea-salt-diary",
+  "name": "海盐日记",
+  "aliases": [
+    "海盐",
+    "海风"
+  ],
+  "category": "清爽生活",
+  "description": "轻蓝双层章节线、右侧小序号与舒展圆角摘句，资料只保留底部弧角，适合生活记录、海边旅行与轻随笔。",
+  "order": 41,
+  "colors": {
+    "accent": "#4c7a85",
+    "strong": "#315e6a",
+    "text": "#42545a",
+    "heading": "#2e4a53",
+    "muted": "#76898f",
+    "surface": "#f2f8f9",
+    "line": "#d8e7ea",
+    "canvas": "#e9f1f3"
+  },
+  "typography": {
+    "bodyFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "headingFont": "'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+    "size": 16,
+    "lineHeight": 2.12,
+    "spacing": 0.2
+  },
+  "layout": {
+    "number": "decimal",
+    "radius": 0,
+    "heading": "salt"
+  },
+  "styles": {}
+}

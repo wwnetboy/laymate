@@ -1,0 +1,34 @@
+{
+  "id": "letterpress-read",
+  "name": "铅字长读",
+  "aliases": [
+    "铅字",
+    "长读"
+  ],
+  "category": "长文阅读",
+  "description": "居中罗马小序与宽松铅字标题，段落首行缩进、页边旁注和三线资料构成安静书页，适合长篇评论与非虚构。",
+  "order": 38,
+  "colors": {
+    "accent": "#5d615b",
+    "strong": "#383e38",
+    "text": "#454941",
+    "heading": "#30362f",
+    "muted": "#73776d",
+    "surface": "#f6f6ef",
+    "line": "#d8dad1",
+    "canvas": "#eceee6"
+  },
+  "typography": {
+    "bodyFont": "'Songti SC','Noto Serif SC','Source Han Serif SC',SimSun,serif",
+    "headingFont": "'Songti SC','Noto Serif SC','Source Han Serif SC',SimSun,serif",
+    "size": 17,
+    "lineHeight": 2.16,
+    "spacing": 0.35
+  },
+  "layout": {
+    "number": "roman",
+    "radius": 0,
+    "heading": "letterpress"
+  },
+  "styles": {}
+}
