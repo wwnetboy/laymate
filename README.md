@@ -12,13 +12,25 @@
 
 ## 安装
 
+**方式一：npm 一键安装（推荐）**
+
+需要 **Node.js 20 或更高版本**。在终端运行：
+
+```bash
+npx laymate-skill@latest
+```
+
+安装器会把 Skill 装进跨工具的 `~/.agents/skills` 目录，Codex、Cursor、Gemini CLI、VS Code、ZCode 等助手都原生读取；检测到 Claude Code 时会额外装一份到 `~/.claude/skills`（它不读标准目录）。再次运行同一命令即可更新，卸载用 `npx laymate-skill uninstall`；自定义目录用 `--dir`，强制增减 Claude Code 副本用 `--claude` / `--no-claude`。
+
+**方式二：交给 AI 助手**
+
 复制这句话，发给你的 AI 助手：
 
 ```text
 请将这个仓库中的 Skill 安装到当前助手的技能目录：https://github.com/wwnetboy/laymate-skill
 ```
 
-运行需要 **Node.js 20 或更高版本**，可以让 AI 助手一起检查。更新时，告诉它「从同一仓库更新 laymate」即可。
+更新时，告诉它「从同一仓库更新 laymate」即可。
 
 <details>
 <summary>手动安装</summary>
@@ -27,9 +39,8 @@
 
 | AI 助手 | 个人技能目录 |
 | --- | --- |
+| Codex、Cursor、Gemini CLI、VS Code、ZCode 等 | `~/.agents/skills/`（跨工具通用） |
 | [Claude Code](https://code.claude.com/docs/en/skills#choose-where-skills-load) | `~/.claude/skills/` |
-| [Codex](https://learn.chatgpt.com/docs/build-skills#where-codex-loads-local-skills) | `~/.agents/skills/` |
-| [Cursor](https://cursor.com/docs/skills#skill-directories) | `~/.cursor/skills/` |
 
 其他客户端按其说明安装。请复制完整 Skill 文件；安装后若未识别，重新打开客户端。
 

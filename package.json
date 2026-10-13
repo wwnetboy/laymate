@@ -1,0 +1,45 @@
+{
+  "name": "laymate-skill",
+  "version": "1.0.2",
+  "description": "公众号排版助手 Skill：根据主题撰写或排版文章，套用 59 款模板生成可切换样式、一键复制的微信公众号 HTML。WeChat Official Account article skill with 59 switchable templates.",
+  "bin": {
+    "laymate-skill": "cli.mjs"
+  },
+  "files": [
+    "cli.mjs",
+    "SKILL.md",
+    "agents/",
+    "assets/",
+    "references/",
+    "scripts/",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "skill",
+    "wechat",
+    "gongzhonghao",
+    "claude-code",
+    "claude",
+    "codex",
+    "cursor",
+    "ai-assistant",
+    "markdown",
+    "templates",
+    "typography"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "author": "wwnetboy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wwnetboy/laymate-skill.git"
+  },
+  "homepage": "https://github.com/wwnetboy/laymate-skill#readme",
+  "bugs": {
+    "url": "https://github.com/wwnetboy/laymate-skill/issues"
+  }
+}

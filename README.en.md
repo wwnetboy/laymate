@@ -10,13 +10,25 @@ Works with skill-enabled AI assistants that can run local commands, such as Clau
 
 ## Installation
 
+**Option 1: npm (recommended)**
+
+Requires **Node.js 20 or later**. Run:
+
+```bash
+npx laymate-skill@latest
+```
+
+The installer copies the skill into `~/.agents/skills`, the cross-agent directory read natively by Codex, Cursor, Gemini CLI, VS Code, ZCode, and other agents; when Claude Code is detected, an extra copy goes into `~/.claude/skills` (it does not read the standard directory). Run the same command again to update; uninstall with `npx laymate-skill uninstall`. Use `--dir` for a custom directory, and `--claude` / `--no-claude` to force or skip the Claude Code copy.
+
+**Option 2: ask your AI assistant**
+
 Copy this prompt and send it to your AI assistant:
 
 ```text
 Install the skill from https://github.com/wwnetboy/laymate-skill into your skills directory.
 ```
 
-**Node.js 20 or later** is required; ask your assistant to check it. To update, ask it to update laymate from the same repository.
+To update, ask it to update laymate from the same repository.
 
 <details>
 <summary>Manual installation</summary>
@@ -25,9 +37,8 @@ Download the [repository ZIP](https://github.com/wwnetboy/laymate-skill/archive/
 
 | AI assistant | Personal skills directory |
 | --- | --- |
+| Codex, Cursor, Gemini CLI, VS Code, ZCode, etc. | `~/.agents/skills/` (cross-agent) |
 | [Claude Code](https://code.claude.com/docs/en/skills#choose-where-skills-load) | `~/.claude/skills/` |
-| [Codex](https://learn.chatgpt.com/docs/build-skills#where-codex-loads-local-skills) | `~/.agents/skills/` |
-| [Cursor](https://cursor.com/docs/skills#skill-directories) | `~/.cursor/skills/` |
 
 Follow the documentation for other clients. Copy all Skill files; reopen the client if the skill does not appear.
 
